@@ -1,4 +1,4 @@
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/27f727a2-2b08-43e0-b4ba-101f3a800936/deploy-status)](https://app.netlify.com/sites/clever-wright-8d485b/deploys) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/21943317-a310-41f4-a625-7eb3bf53cebe/deploy-status)](https://app.netlify.com/sites/quiz-app-react-k1/deploys)
 
 # Quiz App React
 
