@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ReactHtmlParser from 'react-html-parser';
 import styled from 'styled-components'
 
+import ListOptions from './ListOptions'
 import SubmitButton from '../SubmitButton'
 
 const StyledQuestion = styled.div`
@@ -44,24 +45,14 @@ const Question = ({ data, loadNextQuestion }) => {
         <form onSubmit={checkSelectedAnswer}>
             <StyledQuestion>
                 <h2>{ReactHtmlParser(data.question)}</h2>
-                <ul>
-                    {data.incorrect_answers.concat(data.correct_answer).map((answer, index) => (
-                        <li key={index}>
-                            <label>
-                                <input
-                                    type="radio"
-                                    name="answer"
-                                    value={answer}
-                                    checked={selectedOption === answer}
-                                    onChange={event => { setSelectedOption(event.target.value) }}
-                                />
-                                {ReactHtmlParser(answer)}
-                            </label>
-                        </li>
-                    ))}
-                </ul>
+                <ListOptions
+                    answers={data.incorrect_answers.concat(data.correct_answer)}
+                    selectedOption={selectedOption}
+                    setSelectedOption={setSelectedOption}
+                />
+
             </StyledQuestion>
-            <SubmitButton onClick={checkSelectedAnswer} disabled={!selectedOption}>Responder</SubmitButton>
+            <SubmitButton onClick={checkSelectedAnswer} disabled={!selectedOption}>Next Question</SubmitButton>
         </form>
     )
 }

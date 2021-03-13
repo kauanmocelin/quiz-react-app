@@ -11,7 +11,7 @@ const StyledCounter = styled.div`
 `
 const QuestionCounter = ({ numberQuestion, totalQuestions }) => (
     <StyledCounter>
-        <span>Questão {numberQuestion}</span> / { totalQuestions}
+        <span>Question {numberQuestion}</span> / { totalQuestions}
     </StyledCounter>
 )
 
