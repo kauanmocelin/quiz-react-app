@@ -12,7 +12,8 @@ const QuizContainer = styled.div`
     border-radius: 10px;
     box-shadow: 0 10px 2px rgba(100,100,100,0.1);
     overflow: hidden;
-    width: 600px;
+    min-width: 320px;
+    max-width: 600px;
 `
 
 const QuizBuilder = () => {

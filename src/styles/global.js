@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         justify-content: center;
         margin: 0;
+        padding: 15px;
         background-color: #b8c6db;
         background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
         font-family: 'Lato', sans-serif;
